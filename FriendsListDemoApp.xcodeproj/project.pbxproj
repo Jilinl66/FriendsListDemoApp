@@ -97,10 +97,10 @@
 		44B096CC1FE1E6FE00C3F3AF /* FriendsListDemoApp */ = {
 			isa = PBXGroup;
 			children = (
-				44B097011FE1E94800C3F3AF /* SupportFiles */,
+				44B096FC1FE1E8E800C3F3AF /* Controllers */,
 				44B097001FE1E91D00C3F3AF /* Views */,
 				44B096FE1FE1E8FD00C3F3AF /* Models */,
-				44B096FC1FE1E8E800C3F3AF /* Controllers */,
+				44B097011FE1E94800C3F3AF /* SupportFiles */,
 			);
 			path = FriendsListDemoApp;
 			sourceTree = "<group>";
