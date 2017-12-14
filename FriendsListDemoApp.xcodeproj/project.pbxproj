@@ -14,6 +14,10 @@
 		44B096D81FE1E6FE00C3F3AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44B096D61FE1E6FE00C3F3AF /* LaunchScreen.storyboard */; };
 		44B096E31FE1E6FF00C3F3AF /* FriendsListDemoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B096E21FE1E6FF00C3F3AF /* FriendsListDemoAppTests.swift */; };
 		44B096EE1FE1E6FF00C3F3AF /* FriendsListDemoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B096ED1FE1E6FF00C3F3AF /* FriendsListDemoAppUITests.swift */; };
+		44B097031FE1F32200C3F3AF /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B097021FE1F32200C3F3AF /* Networker.swift */; };
+		44B097051FE1F4A800C3F3AF /* FriendObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B097041FE1F4A800C3F3AF /* FriendObject.swift */; };
+		44B097071FE1FAD000C3F3AF /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B097061FE1FAD000C3F3AF /* FriendTableViewCell.swift */; };
+		44B097091FE223AC00C3F3AF /* CustomExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B097081FE223AC00C3F3AF /* CustomExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		44B096E91FE1E6FF00C3F3AF /* FriendsListDemoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FriendsListDemoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44B096ED1FE1E6FF00C3F3AF /* FriendsListDemoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListDemoAppUITests.swift; sourceTree = "<group>"; };
 		44B096EF1FE1E6FF00C3F3AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44B097021FE1F32200C3F3AF /* Networker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
+		44B097041FE1F4A800C3F3AF /* FriendObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendObject.swift; sourceTree = "<group>"; };
+		44B097061FE1FAD000C3F3AF /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
+		44B097081FE223AC00C3F3AF /* CustomExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				44B096CF1FE1E6FE00C3F3AF /* ViewController.swift */,
+				44B097061FE1FAD000C3F3AF /* FriendTableViewCell.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -134,6 +143,9 @@
 		44B096FE1FE1E8FD00C3F3AF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				44B097021FE1F32200C3F3AF /* Networker.swift */,
+				44B097041FE1F4A800C3F3AF /* FriendObject.swift */,
+				44B097081FE223AC00C3F3AF /* CustomExtensions.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -291,8 +303,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44B097091FE223AC00C3F3AF /* CustomExtensions.swift in Sources */,
+				44B097071FE1FAD000C3F3AF /* FriendTableViewCell.swift in Sources */,
 				44B096D01FE1E6FE00C3F3AF /* ViewController.swift in Sources */,
 				44B096CE1FE1E6FE00C3F3AF /* AppDelegate.swift in Sources */,
+				44B097031FE1F32200C3F3AF /* Networker.swift in Sources */,
+				44B097051FE1F4A800C3F3AF /* FriendObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
