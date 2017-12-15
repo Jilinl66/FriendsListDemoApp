@@ -19,10 +19,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        friendTableView.rowHeight = 70
-        fetchFriendsImage()
+        friendTableView.rowHeight = 60
+        
+        func mainWork() {
+            fetchFriendsImage()
+        }
+        
+        mainWork()
     }
 
+    // MARK: - Table view data source
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if(friendsList != nil) {
             return friendsList!.count
@@ -44,9 +50,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     
+    // MARK: - Fetch image and friends list
+
     private func fetchFriendsImage() {
         let path: String = "https://dev01000api03.dynocloud.net/contact/image?friend_email=dgaddamwar@dynosense.com&size=80&mode=binary"
-//        resourceFetcher: ResourceFetcher()
         Networker.networkAPICall(path: path, method: "GET", callback: gotFriendImageCallback);
     }
     
@@ -78,7 +85,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                         let newFriendObject = FriendObject(name: name, image: friendImage)
                         if(friendsList == nil) {
                             friendsList = [newFriendObject]
-                            
                         } else {
                             friendsList?.append(newFriendObject)
                         }
@@ -95,6 +101,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     
+    // MARK: - Updating UI
+
     private func finishLoading() {
         DispatchQueue.main.async {
             self.friendTableView.isHidden = false
