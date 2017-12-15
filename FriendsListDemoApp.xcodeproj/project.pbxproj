@@ -153,8 +153,8 @@
 		44B097001FE1E91D00C3F3AF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				44B096D61FE1E6FE00C3F3AF /* LaunchScreen.storyboard */,
 				44B096D11FE1E6FE00C3F3AF /* Main.storyboard */,
+				44B096D61FE1E6FE00C3F3AF /* LaunchScreen.storyboard */,
 			);
 			name = Views;
 			sourceTree = "<group>";
